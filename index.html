@@ -5,8 +5,17 @@
     <style type="text/css">
         h1 { color: #ff69a3; }
         p { font-weight: bold; }
-        body {background: radial-gradient(rgb(255, 104, 225), rgb(0, 0, 0)); }
+        body {background: radial-gradient(rgb(0, 0, 0), rgb(255, 255, 255)); }
       </style>
+  
+  <script>
+    function clickHandler() {
+      const box = document.getElementById("box");
+      const p = document.createElement("p");
+      p.innerText = "Added by JS";
+      box.appendChild(p);
+    }
+  </script>
   
   </head>
   <body>
@@ -17,5 +26,9 @@
 HTML
 </a>.
     </p>
+
+    <button onclick="clickHandler()">ボタン</button>
+    <div id="box"></div>
+
   </body>
 </html>
