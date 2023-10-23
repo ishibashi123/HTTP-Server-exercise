@@ -6,13 +6,16 @@
         h1 { color: #ff69a3; }
         p { font-weight: bold; }
         body {background: radial-gradient(rgb(0, 0, 0), rgb(255, 255, 255)); }
+        h2 {font-size: 100px;}
       </style>
   
   <script>
     function clickHandler() {
+    
+      alert("実行しますか?")
       const box = document.getElementById("box");
-      const p = document.createElement("p");
-      p.innerText = "Added by JS";
+      const p = document.createElement("h2");
+      p.innerText = "でかすぎーーー";
       box.appendChild(p);
     }
   </script>
